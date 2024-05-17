@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Delícias da Clarinha</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+</head>
+<script src="_javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+    <header id="cabecalho">
+        <img id="icone" src="_imagens/loggo.png">
+    <hgroup>
+        <h1>Receita caseira dos melhores Bolos e Doces! </h1>
+        <h2>Confeitaria Gourmet</h2>
+    </hgroup>
+<br/>
+<img id="iconeAnimado" src="_imagens/orcamentos.png">
+<nav id="menu">
+<h1>Menu Principal</h1>
+<ul>
+    <li onmouseover="mudaFoto('_imagens/Home.png')" onmouseout="mudaFoto('_imagens/orcamentos.png')"><a href="projeto.html">Home</a></li>
+    <li onmouseover="mudaFoto('_imagens/cardapio.png')" onmouseout="mudaFoto('_imagens/orcamentos.png')"><a href="cardapio.html">Cardápio</a></li>
+    <li onmouseover="mudaFoto('_imagens/galeria.png')" onmouseout="mudaFoto('_imagens/orcamentos.png')"><a href="galeria.html">Galeria</a></li>
+    <li onmousemove="mudaFoto('_imagens/orcamentos.png')" onmouseout="mudaFoto('_imagens/orcamentos.png')" ><a href="orcamentos.html">Orçamentos</a></li>
+    <li onmousemove="mudaFoto('_imagens/depoimentos.png')" onmouseout="mudaFoto('_imagens/orcamentos.png')"><a href="depoimentos.html">Depoimentos</a></li>
+</ul>
+</nav>
+</header>
+<form method="post" id="fContato" action="mailto:josyfmartins0@gmail.com">
+    <fieldset id="cliente" ><legend>Identificação do Cliente</legend>
+        <p><label for="cNome">Nome: </label><input type="text" name="tNome" id="cNome" size="35" maxlength="50" placeholder="Nome Completo"/></p>
+        <p><label for="cTelefone">Celular: </label><input type="tel" name="tTelefone" id="cTelefone" size="11" maxlength="11" placeholder="349xxxxxxxx" /></p>
+        <p><label for="cEmail">Email: </label><input type="email" name="tEmail" id="cEmail" size="35" maxlength="50"></p>
+    </fieldset>
+    <fieldset id="endereco" ><legend>Endereço do Cliente</legend>
+        <P><label for="cEnd">Logradouro: </label><input type="text" name="tEnd" id="cEnd" size="40" maxlength="40" placeholder="Rua, Av, Trav..."></P>
+        <P><label for="cNum">Número: </label><input type="number" name="tNum" id="cNum" min="0" max="99999"> <label for="cComplemento">Complemento: </label><input type="text" name="tComplemento" id="cComplemento" size="15" maxlength="15"></P> 
+        <P><label for="cCidade">Cidade: </label>
+        <select name="tCidade" id="cCidade">
+            <option>Patrocínio</option>
+            <option>Patos de Minas</option>
+            <option>Uberlândia</option>
+        </select>    
+    </fieldset>
+    <fieldset id="mensagem" ><legend>Mensagem do Cliente</legend>
+    <input type="radio" name="tEscolha" id="cPedido"/><label for="cPedido">Pedido</label>
+    <input type="radio" name="tEscolha" id="cOrcamento"/><label for="cOrcamento">Orçamento</label>
+        <P><label for="cMsg">Mensagem: </label>
+            <textarea name="tMsg" id="cMsg" cols="45" rows="7" placeholder="Digite aqui o seu pedido ou orçamento"></textarea> 
+    </fieldset>
+    <!-- <input id="botao" type="submit" value="Enviar"/> -->
+    <P><input type="image" src="../Projeto Novo/_imagens/enviar.png">
+</form>
+<footer id="rodape">
+    <p>Copyrigth &copy; 2024 - by Josy Martins<br/>
+    <a href="https://www.instagram.com/delicinhasdaclarinha/" target="_blank">Instagram</a> | Whatsapp</p>
+
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+form {
+    width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13;
+}
+
+input:hover, textarea:hover {
+    background-color: #fccccc;
+}
+
+p {
+    text-indent: 20px;
+}
+
+legend {
+    color: #f89595;
+    font-weight: bold;
+    font-size: 10;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color: #f89595;
+    margin: 20px;
+}
+
+fieldset#cliente {
+    background-image: url("../_imagens/fundo-form.png");
+}
+
+fieldset#endereco {
+    background-image: url("../_imagens/fundo-form.png");
+}
+
+fieldset#mensagem {
+    background-image: url("../_imagens/fundo-form.png");
+}
+

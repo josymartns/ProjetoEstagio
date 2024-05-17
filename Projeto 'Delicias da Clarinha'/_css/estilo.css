@@ -1,0 +1,319 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url('../_fonts/NixieOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'FonteTopicos';
+    src: url('../_fonts/Mulish-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'FonteTexto';
+    src: url('../_fonts/Inter-VariableFont_slnt_wght.ttf');
+}
+
+body {
+    background-image: url("../_imagens/transparente1.jpg");
+}
+
+div#interface {
+    width: 1100px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba( 0,0,0,.1);
+    padding: 10px;
+}
+
+header#cabecalho img#iconeAnimado {
+    position: absolute;
+    left: 1050px;
+    top: 70px;  
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #f89595 solid;
+    height: 150px;
+    background: url("../_imagens/parede-branca1.jpg") repeat;
+    background-position: 500px;
+}
+
+header#cabecalho h1 {
+    font-family: FonteLogo, sans-serif;
+    font-size: 25pt;
+    color: #f5afaf;
+    text-shadow: 1px 1px 1px black;
+    text-align:justify ;
+    padding: 6px;
+    margin: 70px 0px 10px 210px;
+}
+
+header#cabecalho h2 {
+    font-family: FonteLogo, sans-serif;
+    font-size: 30pt;
+    color: #f5afaf;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+/* formatação do menu */
+nav#menu ul {
+    display: block;
+}
+
+nav#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 350px; /*posição menu */
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #fccccc;
+    padding: 20px; /* tamanho do menu */
+    margin: 2px;
+    transition: background-color 1.3s;
+}
+
+nav#menu li:hover {
+    background-color: #f89595;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+section#corpo {
+    display: block;
+    width: 600px;
+    float: left;
+}
+
+aside#lateral {
+    display: block;
+    width: 500px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid black;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+img.img-whatsapp {
+    position: fixed;
+    margin-left: 1000px;
+    margin-top: 190px;
+}
+
+img.img-dir {
+    display: block;
+    float: right;
+    padding: 30px;
+    margin-top: -10px;
+}
+
+div#historia h1 {
+    font-family: FonteTopicos, sans-serif;
+    font-size: 25pt;
+    color: #ffffff;
+    background-color: #f89595 ;
+    text-align: center;
+}
+
+div#historia p {
+    text-align: justify;
+    text-indent: 50px;
+    font-family: FonteTexto, sans-serif;
+    font-size: larger;
+}
+
+div#cardapio h1 {
+    font-family: FonteTopicos, sans-serif;
+    font-size: 25pt;
+    color: #ffffff;
+    background-color: #f89595 ;
+    text-align: center;
+}
+
+div#galeria h1 {
+    font-family: FonteTopicos, sans-serif;
+    font-size: 25pt;
+    color: #ffffff;
+    background-color: #f89595 ;
+    text-align: center;
+}
+
+div#depoimentos h1 {
+    font-family: FonteTopicos, sans-serif;
+    font-size: 25pt;
+    color: #ffffff;
+    background-color: #f89595 ;
+    text-align: center;
+}
+
+span h1 {
+    font-family: FonteTopicos, sans-serif;
+    font-size: 25pt;
+    color: #ffffff;
+    background-color: #f89595 ;
+    text-align: center;
+}
+
+img#img-galeria {
+    box-shadow: 0 1px 2px #000300;
+    width: 60%;
+}
+
+.swiper {
+    height: 600px;
+}
+
+.swiper-slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 450px) {
+    .swiper {
+        height: 270px;
+    }
+}
+
+div#depoimentos h1#depoimento {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 700px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+
+.card {
+    background-color: #f5afaf;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px rgba( 0,0,0,.4)
+}
+
+.star {
+    width: 20px;
+}
+
+.card .user {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
+
+.card h3 {
+    font-family: FonteTopicos, sans-serif;
+}
+
+div#depoimentos p#pdepoimentos {
+    margin-top: 20px;
+    text-align: center;
+    font-family: FonteTopicos, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    width: 1000px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .pcard {
+    position: relative;
+    padding: 40px;
+    width: 90px;
+    background-color: #f5afaf;
+    margin: 10px;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.container .pcard img {
+    transition: 0.4s;
+}
+
+.container .pcard h2 {
+    font-size: 18px;
+    font-family: FonteTopicos, sans-serif;
+}
+
+.container .pcard p {
+    color: #0f0f0f;
+    transition: 0.5s;
+}
+
+.container .pcard a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#f89595;
+    color: black;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+    margin-top: 20px;
+}
+
+.container .pcard:hover {
+    background-color: #fccccc;
+    color:#000300;
+    margin-top: -30px;
+    box-shadow: 2px 20px 25px #f89595;
+    border-color:#ffffff;
+
+}
+.container .pcard:hover img {
+    filter: invert(1);
+}
+
+div#cardapio h2 {
+    text-align: center;
+    font-family: FonteTopicos, sans-serif;
+    font-size:x-large;
+    font-style: oblique;
+}
+
